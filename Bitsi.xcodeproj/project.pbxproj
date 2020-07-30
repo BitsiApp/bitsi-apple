@@ -83,6 +83,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B6BF19B24CE4E3B0002CFA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B6BF19C24CE4E420002CFA6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3B6BF19D24CE4E4A0002CFA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3BC468A724CE3C3C0044F881 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +119,9 @@
 		3BC468AC24CE3C3C0044F881 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3B6BF19D24CE4E4A0002CFA6 /* Models */,
+				3B6BF19C24CE4E420002CFA6 /* ViewModels */,
+				3B6BF19B24CE4E3B0002CFA6 /* Views */,
 				3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */,
 				3BC468AE24CE3C3C0044F881 /* ContentView.swift */,
 				3BC468AF24CE3C3D0044F881 /* Assets.xcassets */,
