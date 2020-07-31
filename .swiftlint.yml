@@ -53,7 +53,6 @@ opt_in_rules: # some rules are only opt-in
   - static_operator
   - toggle_bool
   - trailing_closure
-  - type_contents_order
   - unneeded_parentheses_in_closure_argument
   - unowned_variable_capture
   - untyped_error_in_catch
