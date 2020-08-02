@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
 		3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
+		3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */; };
 		3BC468C924CE3C3D0044F881 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468C824CE3C3D0044F881 /* Tests_iOS.swift */; };
 		3BC468D424CE3C3D0044F881 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468D324CE3C3D0044F881 /* Tests_macOS.swift */; };
 		3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButton.swift; sourceTree = "<group>"; };
+		3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsiApp.swift; sourceTree = "<group>"; };
 		3BC468AE24CE3C3C0044F881 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		3BC468AF24CE3C3D0044F881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		3BB7035B24D7078F006EFAD3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		3BC468A724CE3C3C0044F881 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		3BC468AC24CE3C3C0044F881 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3BB7035B24D7078F006EFAD3 /* Managers */,
 				3B6BF19D24CE4E4A0002CFA6 /* Models */,
 				3B6BF19C24CE4E420002CFA6 /* ViewModels */,
 				3B6BF19B24CE4E3B0002CFA6 /* Views */,
@@ -369,6 +380,7 @@
 				3BC468D824CE3C3D0044F881 /* InitialView.swift in Sources */,
 				3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */,
 				3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
+				3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BitsiApp: App {
-    var body: some Scene {
-        WindowGroup {
-            InitialView()
-        }
+  let persistenceManager = PersistenceManager()
+
+  var body: some Scene {
+    WindowGroup {
+      InitialView()
+        .environment(\.managedObjectContext, persistenceManager.viewContext)
     }
+  }
 }
