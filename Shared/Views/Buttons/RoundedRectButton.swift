@@ -17,7 +17,7 @@ struct RoundedRectButton: View {
   }
 
   var body: some View {
-    Button(action: action, label: {
+    Button(action: action) {
       Text(text)
         .font(.title2)
         .padding()
@@ -26,7 +26,7 @@ struct RoundedRectButton: View {
         .background(Color.black)
         .foregroundColor(.white)
         .cornerRadius(12)
-    })
+    }
   }
 }
 
