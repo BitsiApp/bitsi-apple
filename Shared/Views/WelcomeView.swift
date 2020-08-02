@@ -11,15 +11,13 @@ struct WelcomeView: View {
   var body: some View {
     VStack {
       Spacer()
-      VStack(alignment: .center) {
+      VStack(alignment: .center, spacing: 20) {
         RoundedRectButton("Create New Wallet") {
           print("create new wallet tapped")
         }
-        .padding(.bottom)
         RoundedRectButton("Restore Wallet") {
           print("restore wallet tapped")
         }
-        .padding(.bottom)
         RoundedRectButton("Add Watch-Only Wallet") {
           print("watch-only wallet tapped")
         }
