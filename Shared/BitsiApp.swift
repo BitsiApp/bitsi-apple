@@ -13,7 +13,7 @@ struct BitsiApp: App {
 
   var body: some Scene {
     WindowGroup {
-      InitialView()
+      WelcomeView()
         .environment(\.managedObjectContext, persistenceManager.viewContext)
     }
   }

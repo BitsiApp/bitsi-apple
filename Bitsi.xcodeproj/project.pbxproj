@@ -14,8 +14,8 @@
 		3BC468D424CE3C3D0044F881 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468D324CE3C3D0044F881 /* Tests_macOS.swift */; };
 		3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */; };
 		3BC468D724CE3C3D0044F881 /* BitsiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */; };
-		3BC468D824CE3C3D0044F881 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AE24CE3C3C0044F881 /* InitialView.swift */; };
-		3BC468D924CE3C3D0044F881 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AE24CE3C3C0044F881 /* InitialView.swift */; };
+		3BC468D824CE3C3D0044F881 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */; };
+		3BC468D924CE3C3D0044F881 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */; };
 		3BC468DA24CE3C3D0044F881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC468AF24CE3C3D0044F881 /* Assets.xcassets */; };
 		3BC468DB24CE3C3D0044F881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC468AF24CE3C3D0044F881 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,7 @@
 		3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButton.swift; sourceTree = "<group>"; };
 		3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsiApp.swift; sourceTree = "<group>"; };
-		3BC468AE24CE3C3C0044F881 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3BC468AF24CE3C3D0044F881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BC468B424CE3C3D0044F881 /* Bitsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC468B724CE3C3D0044F881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8ED88624D3A92A007C4FBF /* Buttons */,
-				3BC468AE24CE3C3C0044F881 /* InitialView.swift */,
+				3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,7 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BC468D824CE3C3D0044F881 /* InitialView.swift in Sources */,
+				3BC468D824CE3C3D0044F881 /* WelcomeView.swift in Sources */,
 				3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */,
 				3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
 				3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */,
@@ -388,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BC468D924CE3C3D0044F881 /* InitialView.swift in Sources */,
+				3BC468D924CE3C3D0044F881 /* WelcomeView.swift in Sources */,
 				3BC468D724CE3C3D0044F881 /* BitsiApp.swift in Sources */,
 				3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
 			);
