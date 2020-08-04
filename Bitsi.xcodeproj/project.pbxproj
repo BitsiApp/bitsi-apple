@@ -20,6 +20,12 @@
 		3BC468D924CE3C3D0044F881 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */; };
 		3BC468DA24CE3C3D0044F881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC468AF24CE3C3D0044F881 /* Assets.xcassets */; };
 		3BC468DB24CE3C3D0044F881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC468AF24CE3C3D0044F881 /* Assets.xcassets */; };
+		3BC954F224D8F30800215B2B /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC954F124D8F30800215B2B /* ResponseCodable.swift */; };
+		3BC954F324D8F30800215B2B /* ResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC954F124D8F30800215B2B /* ResponseCodable.swift */; };
+		3BC954F624D8F3CB00215B2B /* JSON+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC954F524D8F3CB00215B2B /* JSON+Extensions.swift */; };
+		3BC954F724D8F3CB00215B2B /* JSON+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC954F524D8F3CB00215B2B /* JSON+Extensions.swift */; };
+		3BC954F924D8F41100215B2B /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC954F824D8F41100215B2B /* DateFormatter+Extensions.swift */; };
+		3BC954FA24D8F41100215B2B /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC954F824D8F41100215B2B /* DateFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,9 @@
 		3BC468CF24CE3C3D0044F881 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC468D324CE3C3D0044F881 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		3BC468D524CE3C3D0044F881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BC954F124D8F30800215B2B /* ResponseCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCodable.swift; sourceTree = "<group>"; };
+		3BC954F524D8F3CB00215B2B /* JSON+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON+Extensions.swift"; sourceTree = "<group>"; };
+		3BC954F824D8F41100215B2B /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +156,8 @@
 		3BC468AC24CE3C3C0044F881 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3BC954F424D8F33400215B2B /* Extensions */,
+				3BC954ED24D8F25300215B2B /* Protocols */,
 				3BB7035B24D7078F006EFAD3 /* Managers */,
 				3B6BF19D24CE4E4A0002CFA6 /* Models */,
 				3B6BF19C24CE4E420002CFA6 /* ViewModels */,
@@ -201,6 +212,23 @@
 				3BC468D524CE3C3D0044F881 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		3BC954ED24D8F25300215B2B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3BC954F124D8F30800215B2B /* ResponseCodable.swift */,
+				3BC954F524D8F3CB00215B2B /* JSON+Extensions.swift */,
+				3BC954F824D8F41100215B2B /* DateFormatter+Extensions.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3BC954F424D8F33400215B2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,9 +417,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC468D824CE3C3D0044F881 /* WelcomeView.swift in Sources */,
+				3BC954F624D8F3CB00215B2B /* JSON+Extensions.swift in Sources */,
+				3BC954F224D8F30800215B2B /* ResponseCodable.swift in Sources */,
 				3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */,
 				3B005E5F24D7270800904C80 /* NetworkManager.swift in Sources */,
 				3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
+				3BC954F924D8F41100215B2B /* DateFormatter+Extensions.swift in Sources */,
 				3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +432,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC468D924CE3C3D0044F881 /* WelcomeView.swift in Sources */,
+				3BC954F724D8F3CB00215B2B /* JSON+Extensions.swift in Sources */,
+				3BC954FA24D8F41100215B2B /* DateFormatter+Extensions.swift in Sources */,
+				3BC954F324D8F30800215B2B /* ResponseCodable.swift in Sources */,
 				3BC468D724CE3C3D0044F881 /* BitsiApp.swift in Sources */,
 				3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
 			);

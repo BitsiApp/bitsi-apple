@@ -8,7 +8,6 @@
 import LittleFire
 
 protocol NetworkManagerType: AnyObject {
-
 }
 
 final class NetworkManager: NetworkManagerType {
