@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B005E5F24D7270800904C80 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B005E5E24D7270800904C80 /* NetworkManager.swift */; };
+		3B005E6224D72A0D00904C80 /* LittleFire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B005E6124D72A0D00904C80 /* LittleFire */; };
 		3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
 		3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
 		3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */; };
@@ -38,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B005E5E24D7270800904C80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButton.swift; sourceTree = "<group>"; };
 		3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsiApp.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B005E6224D72A0D00904C80 /* LittleFire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */,
+				3B005E5E24D7270800904C80 /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -215,6 +220,9 @@
 			dependencies = (
 			);
 			name = "Bitsi (iOS)";
+			packageProductDependencies = (
+				3B005E6124D72A0D00904C80 /* LittleFire */,
+			);
 			productName = "Bitsi (iOS)";
 			productReference = 3BC468B424CE3C3D0044F881 /* Bitsi.app */;
 			productType = "com.apple.product-type.application";
@@ -306,6 +314,9 @@
 				Base,
 			);
 			mainGroup = 3BC468A724CE3C3C0044F881;
+			packageReferences = (
+				3B005E6024D72A0D00904C80 /* XCRemoteSwiftPackageReference "LittleFire" */,
+			);
 			productRefGroup = 3BC468B524CE3C3D0044F881 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +390,7 @@
 			files = (
 				3BC468D824CE3C3D0044F881 /* WelcomeView.swift in Sources */,
 				3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */,
+				3B005E5F24D7270800904C80 /* NetworkManager.swift in Sources */,
 				3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
 				3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */,
 			);
@@ -758,6 +770,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B005E6024D72A0D00904C80 /* XCRemoteSwiftPackageReference "LittleFire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SixFiveSoftware/LittleFire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B005E6124D72A0D00904C80 /* LittleFire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B005E6024D72A0D00904C80 /* XCRemoteSwiftPackageReference "LittleFire" */;
+			productName = LittleFire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BC468A824CE3C3C0044F881 /* Project object */;
 }

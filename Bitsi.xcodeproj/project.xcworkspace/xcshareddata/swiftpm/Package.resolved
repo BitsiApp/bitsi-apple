@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LittleFire",
+        "repositoryURL": "https://github.com/SixFiveSoftware/LittleFire",
+        "state": {
+          "branch": null,
+          "revision": "83911632c56739748d70299e00be298259f4b2b3",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
