@@ -11,8 +11,8 @@
 		3B005E6224D72A0D00904C80 /* LittleFire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B005E6124D72A0D00904C80 /* LittleFire */; };
 		3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
 		3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
-		3B53A2F424DB98270003D60E /* Cnlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B53A2F324DB98270003D60E /* Cnlib.framework */; };
-		3B53A2F524DB98270003D60E /* Cnlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B53A2F324DB98270003D60E /* Cnlib.framework */; };
+		3B2F8EEB24E053270000ADCC /* Cnlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2F8EEA24E053270000ADCC /* Cnlib.framework */; };
+		3B2F8EEC24E053270000ADCC /* Cnlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2F8EEA24E053270000ADCC /* Cnlib.framework */; };
 		3B53A2F724DB99510003D60E /* BIP39WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53A2F624DB99510003D60E /* BIP39WordList.swift */; };
 		3B53A2F824DB99510003D60E /* BIP39WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53A2F624DB99510003D60E /* BIP39WordList.swift */; };
 		3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */; };
@@ -52,7 +52,7 @@
 /* Begin PBXFileReference section */
 		3B005E5E24D7270800904C80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButton.swift; sourceTree = "<group>"; };
-		3B53A2F324DB98270003D60E /* Cnlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cnlib.framework; sourceTree = "<group>"; };
+		3B2F8EEA24E053270000ADCC /* Cnlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cnlib.framework; sourceTree = "<group>"; };
 		3B53A2F624DB99510003D60E /* BIP39WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39WordList.swift; sourceTree = "<group>"; };
 		3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsiApp.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B005E6224D72A0D00904C80 /* LittleFire in Frameworks */,
-				3B53A2F424DB98270003D60E /* Cnlib.framework in Frameworks */,
+				3B2F8EEB24E053270000ADCC /* Cnlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B53A2F524DB98270003D60E /* Cnlib.framework in Frameworks */,
+				3B2F8EEC24E053270000ADCC /* Cnlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +165,7 @@
 		3BC468AC24CE3C3C0044F881 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3B53A2F324DB98270003D60E /* Cnlib.framework */,
+				3B2F8EEA24E053270000ADCC /* Cnlib.framework */,
 				3BC954F424D8F33400215B2B /* Extensions */,
 				3BC954ED24D8F25300215B2B /* Protocols */,
 				3BB7035B24D7078F006EFAD3 /* Managers */,
