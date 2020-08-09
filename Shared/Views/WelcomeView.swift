@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
   @State private var showingWordsActive = false
   @State private var showWordsSelection: Int?
-  
+
   var body: some View {
     NavigationView {
       VStack {
@@ -40,6 +40,7 @@ struct WelcomeView: View {
       }
     }
     .padding()
+    
   }
 }
 
