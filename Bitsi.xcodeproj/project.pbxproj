@@ -11,6 +11,10 @@
 		3B005E6224D72A0D00904C80 /* LittleFire in Frameworks */ = {isa = PBXBuildFile; productRef = 3B005E6124D72A0D00904C80 /* LittleFire */; };
 		3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
 		3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */; };
+		3B53A2F424DB98270003D60E /* Cnlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B53A2F324DB98270003D60E /* Cnlib.framework */; };
+		3B53A2F524DB98270003D60E /* Cnlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B53A2F324DB98270003D60E /* Cnlib.framework */; };
+		3B53A2F724DB99510003D60E /* BIP39WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53A2F624DB99510003D60E /* BIP39WordList.swift */; };
+		3B53A2F824DB99510003D60E /* BIP39WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B53A2F624DB99510003D60E /* BIP39WordList.swift */; };
 		3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */; };
 		3BC468C924CE3C3D0044F881 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468C824CE3C3D0044F881 /* Tests_iOS.swift */; };
 		3BC468D424CE3C3D0044F881 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468D324CE3C3D0044F881 /* Tests_macOS.swift */; };
@@ -48,6 +52,8 @@
 /* Begin PBXFileReference section */
 		3B005E5E24D7270800904C80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3B026E1124D3AB0C00139100 /* RoundedRectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectButton.swift; sourceTree = "<group>"; };
+		3B53A2F324DB98270003D60E /* Cnlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cnlib.framework; sourceTree = "<group>"; };
+		3B53A2F624DB99510003D60E /* BIP39WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIP39WordList.swift; sourceTree = "<group>"; };
 		3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsiApp.swift; sourceTree = "<group>"; };
 		3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B005E6224D72A0D00904C80 /* LittleFire in Frameworks */,
+				3B53A2F424DB98270003D60E /* Cnlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B53A2F524DB98270003D60E /* Cnlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +114,7 @@
 			children = (
 				3B8ED88624D3A92A007C4FBF /* Buttons */,
 				3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */,
+				3B53A2F624DB99510003D60E /* BIP39WordList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 		3BC468AC24CE3C3C0044F881 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3B53A2F324DB98270003D60E /* Cnlib.framework */,
 				3BC954F424D8F33400215B2B /* Extensions */,
 				3BC954ED24D8F25300215B2B /* Protocols */,
 				3BB7035B24D7078F006EFAD3 /* Managers */,
@@ -424,6 +434,7 @@
 				3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
 				3BC954F924D8F41100215B2B /* DateFormatter+Extensions.swift in Sources */,
 				3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */,
+				3B53A2F724DB99510003D60E /* BIP39WordList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +448,7 @@
 				3BC954F324D8F30800215B2B /* ResponseCodable.swift in Sources */,
 				3BC468D724CE3C3D0044F881 /* BitsiApp.swift in Sources */,
 				3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
+				3B53A2F824DB99510003D60E /* BIP39WordList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +602,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -611,6 +627,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -635,6 +655,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -657,6 +681,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared",
+				);
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
