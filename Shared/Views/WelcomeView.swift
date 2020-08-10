@@ -38,10 +38,14 @@ struct WelcomeView: View {
 struct WelcomeView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      WelcomeView()
-      WelcomeView().previewDevice(PreviewDevice(rawValue: "iPhone X"))
-      WelcomeView().environment(\.colorScheme, .dark)
-      WelcomeView().previewDevice(PreviewDevice(rawValue: "iPhone X")).environment(\.colorScheme, .dark)
+      Group {
+        WelcomeView()
+        WelcomeView().previewDevice(PreviewDevice(rawValue: "iPhone X"))
+      }
+      Group {
+        WelcomeView()
+        WelcomeView().previewDevice(PreviewDevice(rawValue: "iPhone X"))
+      }.environment(\.colorScheme, .dark)
     }
   }
 }
