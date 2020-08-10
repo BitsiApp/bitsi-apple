@@ -9,4 +9,5 @@
 import Foundation
 
 enum ImageAsset: String, AssetConvertibleType {
+  case welcomeStarsBackground
 }

@@ -13,39 +13,46 @@ struct WelcomeView: View {
 
   var body: some View {
     NavigationView {
-      VStack {
-        Spacer()
-        VStack(alignment: .center, spacing: 20) {
-          NavigationLink(
-            destination: BIP39WordList(),
-            tag: 1,
-            selection: $showWordsSelection) {
-            RoundedRectButton("Show BIP39 Words") {
-              showWordsSelection = 1
-            }
-          }
-//          RoundedRectButton("Create New Wallet") {
-//            print("create new wallet tapped")
-//          }
-//          RoundedRectButton("Restore Wallet") {
-//            print("restore wallet tapped")
-//          }
-//          RoundedRectButton("Add Watch-Only Wallet") {
-//            print("watch-only wallet tapped")
-//          }
-//          RoundedRectButton("Show BIP39 Word List") {
-//            BIP39WordList()
-//          }
+      ZStack {
+        ColorAsset.backgroundPrimary.color
+        VStack {
+          ImageAsset.welcomeStarsBackground.image
+            .resizable()
+            .opacity(0.5)
+            .aspectRatio(contentMode: .fit)
+            .padding(.top, 44)
+          Spacer()
         }
+        VStack {
+          Spacer()
+          WelcomeChoiceView()
+        }
+        .padding(.bottom, 32)
+        .padding([.leading, .trailing])
       }
+      .edgesIgnoringSafeArea(.all)
     }
-    .padding()
-    
   }
 }
 
 struct WelcomeView_Previews: PreviewProvider {
   static var previews: some View {
-    WelcomeView()
+    Group {
+      WelcomeView()
+      WelcomeView().previewDevice(PreviewDevice(rawValue: "iPhone X"))
+      WelcomeView().environment(\.colorScheme, .dark)
+      WelcomeView().previewDevice(PreviewDevice(rawValue: "iPhone X")).environment(\.colorScheme, .dark)
+    }
+  }
+}
+
+struct WelcomeChoiceView: View {
+  var body: some View {
+    VStack(alignment: .center, spacing: 20) {
+      NavigationLink(
+        destination: BIP39WordList()) {
+        RoundedNavigationButton(text: "Show BIP39 Word List")
+      }
+    }
   }
 }

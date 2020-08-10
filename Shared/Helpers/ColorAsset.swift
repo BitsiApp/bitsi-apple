@@ -14,4 +14,5 @@ enum ColorAsset: String, AssetConvertibleType {
   case backgroundModal
   case primaryBlue
   case primaryOrange
+  case primaryWhite
 }
