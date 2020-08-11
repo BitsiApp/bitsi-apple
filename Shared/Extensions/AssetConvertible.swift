@@ -5,15 +5,14 @@
 //  Created by Mitch on 5/13/20.
 //
 
-import UIKit
 import SwiftUI
+import UIKit
 
 protocol AssetConvertibleType {}
 
 extension AssetConvertibleType where Self: RawRepresentable, Self.RawValue == String {
-
   var uiImage: UIImage {
-    return UIImage(imageLiteralResourceName: rawValue)
+    UIImage(imageLiteralResourceName: rawValue)
   }
 
   var image: Image {
@@ -21,7 +20,7 @@ extension AssetConvertibleType where Self: RawRepresentable, Self.RawValue == St
   }
 
   var templateUIImage: UIImage {
-    return uiImage.withRenderingMode(.alwaysTemplate)
+    uiImage.withRenderingMode(.alwaysTemplate)
   }
 
   var templateImage: Image {
