@@ -26,6 +26,12 @@
 		3BC3A59224E0D2FC0055A327 /* RoundedNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59024E0D2FC0055A327 /* RoundedNavigationButton.swift */; };
 		3BC3A59724E2320D0055A327 /* KeypadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59624E2320D0055A327 /* KeypadButton.swift */; };
 		3BC3A59824E2320D0055A327 /* KeypadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59624E2320D0055A327 /* KeypadButton.swift */; };
+		3BC3A59A24E2351A0055A327 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59924E2351A0055A327 /* KeypadView.swift */; };
+		3BC3A59B24E2351A0055A327 /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59924E2351A0055A327 /* KeypadView.swift */; };
+		3BC3A59D24E37C870055A327 /* KeypadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59C24E37C870055A327 /* KeypadViewModel.swift */; };
+		3BC3A59E24E37C870055A327 /* KeypadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59C24E37C870055A327 /* KeypadViewModel.swift */; };
+		3BC3A5A024E37D9F0055A327 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59F24E37D9F0055A327 /* String+Extensions.swift */; };
+		3BC3A5A124E37D9F0055A327 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC3A59F24E37D9F0055A327 /* String+Extensions.swift */; };
 		3BC468C924CE3C3D0044F881 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468C824CE3C3D0044F881 /* Tests_iOS.swift */; };
 		3BC468D424CE3C3D0044F881 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468D324CE3C3D0044F881 /* Tests_macOS.swift */; };
 		3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */; };
@@ -68,6 +74,9 @@
 		3BB7035C24D7079D006EFAD3 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		3BC3A59024E0D2FC0055A327 /* RoundedNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedNavigationButton.swift; sourceTree = "<group>"; };
 		3BC3A59624E2320D0055A327 /* KeypadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadButton.swift; sourceTree = "<group>"; };
+		3BC3A59924E2351A0055A327 /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+		3BC3A59C24E37C870055A327 /* KeypadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadViewModel.swift; sourceTree = "<group>"; };
+		3BC3A59F24E37D9F0055A327 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		3BC468AD24CE3C3C0044F881 /* BitsiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsiApp.swift; sourceTree = "<group>"; };
 		3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3BC468AF24CE3C3D0044F881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +145,7 @@
 				3B8ED88624D3A92A007C4FBF /* Buttons */,
 				3BC468AE24CE3C3C0044F881 /* WelcomeView.swift */,
 				3B53A2F624DB99510003D60E /* BIP39WordList.swift */,
+				3BC3A59924E2351A0055A327 /* KeypadView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +153,7 @@
 		3B6BF19C24CE4E420002CFA6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3BC3A59C24E37C870055A327 /* KeypadViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				3B2B34FE24E07377004AA7D0 /* AssetConvertible.swift */,
+				3BC3A59F24E37D9F0055A327 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -454,15 +466,18 @@
 				3BC3A59124E0D2FC0055A327 /* RoundedNavigationButton.swift in Sources */,
 				3BC954F624D8F3CB00215B2B /* JSON+Extensions.swift in Sources */,
 				3BC468D624CE3C3D0044F881 /* BitsiApp.swift in Sources */,
+				3BC3A5A024E37D9F0055A327 /* String+Extensions.swift in Sources */,
 				3B005E5F24D7270800904C80 /* NetworkManager.swift in Sources */,
 				3B026E1224D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
 				3BC3A59724E2320D0055A327 /* KeypadButton.swift in Sources */,
 				3B2B350624E07526004AA7D0 /* ImageAsset.swift in Sources */,
+				3BC3A59A24E2351A0055A327 /* KeypadView.swift in Sources */,
 				3B2B350424E07526004AA7D0 /* ColorAsset.swift in Sources */,
 				3BC954F924D8F41100215B2B /* DateFormatter+Extensions.swift in Sources */,
 				3BB7035D24D7079D006EFAD3 /* PersistenceManager.swift in Sources */,
 				3B2B34FF24E07377004AA7D0 /* AssetConvertible.swift in Sources */,
 				3B53A2F724DB99510003D60E /* BIP39WordList.swift in Sources */,
+				3BC3A59D24E37C870055A327 /* KeypadViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +493,9 @@
 				3B2B350524E07526004AA7D0 /* ColorAsset.swift in Sources */,
 				3BC468D724CE3C3D0044F881 /* BitsiApp.swift in Sources */,
 				3B026E1324D3AB0C00139100 /* RoundedRectButton.swift in Sources */,
+				3BC3A5A124E37D9F0055A327 /* String+Extensions.swift in Sources */,
+				3BC3A59E24E37C870055A327 /* KeypadViewModel.swift in Sources */,
+				3BC3A59B24E2351A0055A327 /* KeypadView.swift in Sources */,
 				3BC3A59224E0D2FC0055A327 /* RoundedNavigationButton.swift in Sources */,
 				3B2B350024E07377004AA7D0 /* AssetConvertible.swift in Sources */,
 				3B53A2F824DB99510003D60E /* BIP39WordList.swift in Sources */,

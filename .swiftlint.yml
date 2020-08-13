@@ -119,3 +119,10 @@ deployment_target:
 enum_case_associated_values_count:
   warning: 3
   error: 4
+
+identifier_name:
+  severity: warning
+  min_length: 3
+  max_length: 80
+  excluded:
+    - id
