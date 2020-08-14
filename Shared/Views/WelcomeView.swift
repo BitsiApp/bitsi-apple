@@ -53,9 +53,11 @@ struct WelcomeView_Previews: PreviewProvider {
 struct WelcomeChoiceView: View {
   var body: some View {
     VStack(alignment: .center, spacing: 20) {
-      NavigationLink(
-        destination: BIP39WordList()) {
+      NavigationLink(destination: BIP39WordList()) {
         RoundedNavigationButton(text: "Show BIP39 Word List")
+      }
+      NavigationLink(destination: CreatePINView()) {
+        RoundedNavigationButton(text: "Create Wallet")
       }
     }
   }

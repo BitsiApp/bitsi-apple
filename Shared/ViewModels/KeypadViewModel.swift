@@ -25,9 +25,13 @@ class KeypadViewModel: ObservableObject {
 
   private let columnCount = 3
 
-  lazy var columns: [GridItem] = {
-    (0..<columnCount).map { _ in GridItem(.fixed(100)) }
-  }()
+//  lazy var columns: [GridItem] = {
+//    (0..<columnCount).map { _ in GridItem(.fixed(90)) }
+//  }()
+  func columns(for size: CGSize) -> [GridItem] {
+    let columnWidth = (size.width / CGFloat(columnCount)) * 0.9
+    return (0..<columnCount).map { _ in GridItem(.fixed(columnWidth))}
+  }
 
   func selectedButton(title: String) {
     print("selected: \(title)")

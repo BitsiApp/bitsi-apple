@@ -20,13 +20,15 @@ struct KeypadView: View {
   }
 
   var body: some View {
-    LazyVGrid(columns: viewModel.columns) {
-      ForEach(viewModel.buttonTitles) { title in
-        Group {
-          if title.isEmpty {
-            Spacer()
-          } else {
-            KeypadButton(text: title) { viewModel.selectedButton(title: title) }
+    GeometryReader { proxy in
+      LazyVGrid(columns: viewModel.columns(for: proxy.size)) {
+        ForEach(viewModel.buttonTitles) { title in
+          Group {
+            if title.isEmpty {
+              Spacer()
+            } else {
+              KeypadButton(text: title) { viewModel.selectedButton(title: title) }
+            }
           }
         }
       }
